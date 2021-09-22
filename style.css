@@ -1,0 +1,89 @@
+body {
+  background-color: #fff;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  min-height: 100vh;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1;
+}
+/* added line-height  and vertical-align */
+textarea {
+  background: transparent;
+  border-style: ridge;
+  resize: none;
+  color: #000000;
+  border-left: 1px solid black;
+  padding: 10px;
+ 
+  vertical-align: middle;
+ 
+}
+
+.jumbotron {
+  text-align: center;
+  background-color: transparent;
+  color: black;
+  border-radius: 0;
+  border-bottom: 10px solid black;
+}
+
+
+.description {
+  white-space: pre-wrap;
+}
+/* added this selector */
+.row-time-block {
+  display: flex;
+
+}
+.time-block {
+  text-align: center;
+  border-radius: 15px;
+}
+
+.row {
+  white-space: pre-wrap;
+  height: 80px;
+  border-top: 1px solid white;
+}
+/* display inline, line-height, align-items, text-align, vertical-align  */
+.hour {
+  display: inline;
+  line-height: 50px;
+  align-items:flex-end;
+  text-align:end;
+  vertical-align: middle;
+  background-color: #ffffff;
+  color: #000000;
+  border-top: 1px dashed #000000;
+}
+
+.past {
+  background-color: #d3d3d3;
+  color: white;
+}
+
+.present {
+  background-color: #ff6961;
+  color: white;
+}
+
+.future {
+  background-color: #77dd77;
+  color: white;
+}
+
+.saveBtn {
+  border-left: 1px solid black;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  background-color: #06aed5;
+  color: white;
+}
+
+.saveBtn i:hover {
+  font-size: 20px;
+  transition: all 0.3s ease-in-out;
+}
