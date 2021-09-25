@@ -5,20 +5,19 @@ body {
   margin: 0;
   min-height: 100vh;
   font-family: 'Open Sans', sans-serif;
+  font-display: auto; /*added font-display */
   font-size: 16px;
   line-height: 1;
 }
-/* added line-height  and vertical-align */
+/* added vertical-align */
 textarea {
   background: transparent;
   border-style: ridge;
   resize: none;
   color: #000000;
   border-left: 1px solid black;
-  padding: 10px;
- 
-  vertical-align: middle;
- 
+  padding: 10px; 
+  vertical-align: middle; 
 }
 
 .jumbotron {
@@ -33,12 +32,9 @@ textarea {
 .description {
   white-space: pre-wrap;
 }
-/* added this selector */
-.row-time-block {
-  display: flex;
-
-}
+/* added display flex */
 .time-block {
+  display: flex;
   text-align: center;
   border-radius: 15px;
 }
@@ -64,10 +60,18 @@ textarea {
   background-color: #d3d3d3;
   color: white;
 }
+/* added hover to timeblocks*/
+.past:hover {
+  background-color: #f0ecec;
+}
 
 .present {
   background-color: #ff6961;
   color: white;
+}
+
+.present:hover {
+  background-color:  #f78781;
 }
 
 .future {
@@ -75,6 +79,9 @@ textarea {
   color: white;
 }
 
+.future:hover {
+  background-color: #9fe49f;
+}
 .saveBtn {
   border-left: 1px solid black;
   border-top-right-radius: 15px;
